@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://sprite/PlayerLeft.png" type="Texture" id=1]
+[ext_resource path="res://sprite/ball.png" type="Texture" id=2]
+[ext_resource path="res://sprite/PlayerRight.png" type="Texture" id=3]
+[ext_resource path="res://script/Node2D.gd" type="Script" id=4]
+
+[node name="GameNode2D" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="BallSprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="RightPlayerSprite" type="Sprite" parent="."]
+position = Vector2( 775, 300 )
+texture = ExtResource( 3 )
+
+[node name="LeftPlayerSprite" type="Sprite" parent="."]
+position = Vector2( 25, 300 )
+texture = ExtResource( 1 )
+region_rect = Rect2( 300, 0, 0, 0 )
